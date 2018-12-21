@@ -1,0 +1,51 @@
+ruby lecture 9/12
+
+puts 'string'
+	console output
+	+ to concat
+
+string variable
+	not necessary to assign type, cannot change type once declared
+	First_name = "Michael"
+
+puts variable.class
+	output of data type
+
+Reference variables within string output
+	puts "#{message} is hello world"
+	must use double quotes for this action
+
+puts variable.methods
+	associated methods with variable
+
+quote escape is \
+for quote within quote nest single within double 
+
+.length - standard
+
+prompt for user input into variable
+	variable = gets.chomp
+
+function
+
+	def funcname(params)
+
+	end
+
+type conversion
+	.to_x
+		.to_f
+			float
+		.to_i
+			integer
+		_s
+			string
+		_c
+			character
+		_b
+			boolean
+
+
+
+ 
+

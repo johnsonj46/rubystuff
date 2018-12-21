@@ -1,0 +1,22 @@
+<h1>Search for 'bitcoin'</h1>
+<div id="bit">
+	<% @search.each do |tweet| %>
+		<blockquote><%= tweet.text =%></blockquote>
+	<% end %>
+</div>
+
+
+<h1>tweets from @business (Bloomberg) </h1>
+<div id="attrs">
+	<h1><%= @users.inspect =%></p>
+</div>
+
+<div id="favs">
+	<% @favs.each do |tweet| %>
+		<blockquote><%= tweet.text =%></blockquote>
+	<% end %>		
+</div>
+
+
+<a href="http://localhost:3000/pages">more</a>
+<a href="http://localhost:3000/about">bio</a>

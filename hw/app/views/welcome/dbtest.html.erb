@@ -1,0 +1,40 @@
+<style>
+	.get {
+		margin: 0 auto;
+	}
+</style>
+
+<h1>Latest Bloomberg Tweets</h1>
+<div id="bit">
+	<table class="txt--center get">
+          <thead>
+            <tr>
+              <th class="txt--center">image</th>
+              <th class="txt--center">name</th>
+              <th class="txt--center">tweet</th>
+              <th class="txt--center">created time</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            	<% @manifest.each do |blob| %>
+            		<tr>
+	            		<td class="txt--center"><img src="<%= blob.image =%>"></td>
+						<td class="txt--center"><%= blob.username =%></td>
+						<td class="txt--center"><%= blob.tweet =%></td>
+						<td class="txt--center"><%= blob.origin =%></td>
+					</tr>
+				<% end %>
+       
+            
+
+          </tbody>
+        </table>
+
+
+	<% @manifest.each do |blob| %>
+		<td><%= blob.username =%></td>
+	<% end %>
+
+
+</div>
